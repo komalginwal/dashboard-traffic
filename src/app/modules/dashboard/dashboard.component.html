@@ -1,0 +1,38 @@
+
+
+<mat-divider></mat-divider>
+<br>
+<div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px" class="stats-cards">
+    <mat-card fxFlex="25">
+        <my-app-info label="Fatal" total= "273k" percentage="2" [data] = "info"></my-app-info>
+    </mat-card>
+    <mat-card fxFlex="25">
+        <my-app-info label="Severe" total= "273k" percentage="25" [data] = "info"></my-app-info>
+
+    </mat-card>
+    <mat-card fxFlex="50">
+        <app-line [data]="line"></app-line>
+    </mat-card>
+    
+</div>
+
+<mat-divider></mat-divider>
+<div>
+    <div>Table</div>
+    <div>Pie Charts</div>
+
+</div>
+<mat-divider></mat-divider>
+<div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px" class="stats-cards">
+<mat-card fxFlex="50">
+        <app-area [data]="bigChart"></app-area>
+    </mat-card>
+<mat-card fxFlex="55">
+<app-demo-map> </app-demo-map>
+    </mat-card>
+</div>
+
+
+
+<br>
+
